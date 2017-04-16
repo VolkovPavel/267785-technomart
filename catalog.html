@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Техномарт Каталог</title>
+    </head>
+    <body>
+      <header>
+        <div class="header-top container">
+          <a class="header-logo" href="index.html">Техномарт</a>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="header-search">Поиск:</label>
+            <input type="text" name="search" id="header-search">
+          </form>
+          <a class="bookmarks" href="#">Закладки:0</a>
+          <a class="shoping-cart" href="#">Корзина:10</a>
+          <a class="order-btn" href="#">Оформить заказ</a>
+        </div>
+        <div class="header-middle container">
+          <div class="header-middle-about">
+            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          </div>
+          <div class="header-middle-adress">
+            <p>+7(812)555-05-55</p>
+            <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          </div>
+          <div class="header-middle-logged">
+            <a class="profile" href="#">Равшан Джамшутович</a>
+            <a class="sign-out-btn" href="#"></a>
+            <a href="#">Мои заказы</a>
+            <a href="#">Личный кабинет</a>
+          </div>
+        </div>
+        <div class="header-bottom container">
+          <nav>
+            <ul class="main-menu">
+              <li class="main-menu-item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Компания</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Новости</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Спецпредложения</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="catalog-title">
+            <div class="breadcrumbs">
+              <a class="home-btn"></a>
+              <a href="#">Каталог</a>
+              <a href="#">Инструмент</a>
+              <a href="#">Перфораторы</a>
+            </div>
+            <h2>Перфораторы</h2>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="sidebar"><!--Левая колонка Фильтр-->
+
+          <form action="#" method="get">
+
+            <div class="filter">
+              <p>Фильтр:</p>
+              <span>Цена:</span>
+              <div class="filter-range-wrapper">
+                <div class="filter-range">
+                  <div class="filter-range-scale">
+                    <div class="filter-range-bar"></div>
+                  </div>
+                <div class="filter-range-handle min"></div>
+                <div class="filter-range-handle max"></div>
+                </div>
+              </div>
+
+            <div class="filter-interval">
+              <label><input type="text" name="min-interval" value="0"></label>
+              <label><input type="text" name="max-interval" value="30000"></label>
+            </div>
+          </div>
+
+            <div class="manufacturers-form">
+              <h2>Производители:</h2>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="manufacturer" id="BOSCH">
+                    <label for="BOSCH">BOSCH</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="manufacturer" id="ИНТЕРСКОЛ">
+                    <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="manufacturer" id="MAKITA">
+                    <label for="MAKITA">MAKITA</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="manufacturer" id="DEWALT">
+                    <label for="DEWALT">DEWALT</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="manufacturer" id="HITACHI">
+                    <label for="HITACHI">HITACHI</label>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="power-form">
+              <h2>Питание:</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="power-type" id="battery">
+                    <label for="battery">Аккумуляторные</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="power-type" id="cabel">
+                    <label for="cabel">Сетевые</label>
+                  </li>
+                </ul>
+            </div>
+            <input type="submit" name="Показать" value="Показать">
+
+          </form>
+
+        </section>
+
+        <section class="catalog-main"><!--Правый блок Каталог-->
+        </section>
+
+      </main>
+    </body>
+  </html>
