@@ -1,18 +1,18 @@
 body{
   font-size: 18px;
   line-height: 24px;
-  color:#000000;
+  color: #000000;
   font-weight: normal;
-  font-family: 'Cuprum',sans-serif;
+  font-family: 'PT Sans', 'Arial', 'Tahoma', sans-serif;
 }
 
 .popular-goods h2{
   font-size: 30px;
   line-height: 30px;
-  color:#3d546f;
+  color: #3d546f;
   font-weight: normal;
   text-transform: uppercase;
-  font-family: 'Cuprum',sans-serif;
+  font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
 }
 
 .catalog-items h2{
@@ -20,5 +20,4 @@ body{
   line-height: 20px;
   font-weight: bold;
   color: #000000;
-  font-family: 'PT Sans',sans-serif;
 }
