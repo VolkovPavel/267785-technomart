@@ -4,6 +4,8 @@ body{
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', 'Arial', 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .popular-goods h2{
@@ -21,3 +23,157 @@ body{
   font-weight: bold;
   color: #000000;
 }
+
+/*Сетка*/
+
+
+/*header-top*/
+.container{
+  width: 940px;
+  margin:0px auto;
+  padding: 0 10px;
+}
+
+.header-top{
+  display: flex;
+}
+
+.header-logo{
+  width: 220px;
+  padding: 9.5px 0;
+  font-size: 24px;
+  text-align: center;
+  background: #ee3643;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
+  box-shadow: 0px 6px  #b52933;
+}
+
+.header-top form{
+  width: 270px;
+  padding: 9.5px 0;
+}
+
+.header-top .bookmarks,
+.header-top .shoping-cart,
+.header-top .order-btn{
+  width: 150px;
+  text-align: center;
+  padding: 9.5px 0;
+  text-decoration: none;
+}
+
+/*header-middle*/
+
+.header-middle{
+  display: flex;
+  height: 160px;
+}
+
+.header-middle-about{
+  width: 200px;
+  font-size: 16px;
+  line-height: 23px;
+  color: red;
+  font-style: italic;
+  font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
+  margin-left: 50px;
+}
+
+.header-middle-about p{
+  margin-top: 52px;
+}
+
+
+.header-middle-adress{
+  text-align: center;
+  width: 270px;
+  font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
+  margin-left: 70px;
+}
+
+.header-middle-adress p:first-child{
+  margin-top: 42px;
+  padding: 12px 50px 12px 75px;
+  font-size: 21px;
+  line-height: 18px;
+  color: red;
+  border: 1px solid grey;
+}
+
+.header-middle-adress p:last-child{
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: -11px;
+}
+
+.header-middle-registration{
+  width: 280px;
+  line-height: 18px;
+  font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
+  margin-left: 70px;
+  font-size: 0;
+}
+
+.login-btn,
+.sign-btn{
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+  padding:14px 0;
+  text-align: center;
+  font-size: 21px;
+  vertical-align: middle;
+
+}
+.login-btn {
+  width: 115px;
+  padding-left: 5px;
+}
+
+.sign-btn{
+  width: 150px;
+  margin-left: 10px;
+}
+
+.main-menu{
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+.main-menu a{
+  text-decoration: none;
+  display: block;
+  padding: 17px 0;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
+}
+
+.main-menu-item a:not(:nth-child(5)){
+  width: 125px;
+
+}
+
+.main-menu-item:nth-child(5) a{
+  width: 190px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
