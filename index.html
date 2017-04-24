@@ -6,25 +6,26 @@
       <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-
         <header class="header-main">
-          <div class="header-top container">
-              <a class="header-logo">Техномарт</a>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <label for="header-search">Поиск:</label>
-                <input type="text" name="search" id="header-search">
-              </form>
-              <a class="bookmarks" href="#">Закладки:0</a>
-              <a class="shoping-cart" href="#">Корзина:0</a>
+          <div class="header-top-wrapper">
+            <div class="header-top container">
+                <a class="header-logo">Техномарт</a>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <label for="header-search">Поиск:</label>
+                  <input type="text" name="search" id="header-search">
+                </form>
+                <a class="bookmarks" href="#">Закладки: 0</a>
+                <a class="shoping-cart" href="#">Корзина: 0</a>
               <a class="order-btn" href="#">Оформить заказ</a>
+            </div>
           </div>
           <div class="header-middle container">
               <div class="header-middle-about">
                 <p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
               </div>
-              <div class="header-middle-adress">
-                <p>+7(812)555-05-55</p>
-                <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+              <div class="header-middle-contacts">
+                <p>+7 (812) 555-05-55</p>
+                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </div>
               <div class="header-middle-registration">
                 <a class="login-btn" href="#">Войти</a>
@@ -62,44 +63,51 @@
 
       <main>
           <section class="promo container">
+
+            <div class="promo-left">
               <div class="promo-item">
-                  <h2>Материалы</h2>
-                  <a href="#">На любой вкус</a>
+                <h2>Материалы</h2>
+                <a href="#">На любой вкус</a>
               </div>
               <div class="promo-item">
-                  <h2>Инструмент</h2>
-                  <a href="#">На все случаи</a>
-              </div>
-              <div class="promo-item">
-                  <h2>Техника</h2>
-                  <a href="#">Для стойки</a>
-              </div>
-              <div class="promo-item">
-                  <h2>Скидка 50%</h2>
-                  <a href="#">На 350 товаров</a>
-              </div>
-              <div class="promo-item">
-                  <h2>Доставка</h2>
-                  <a href="#">Бесплатно</a>
+                <h2>Инструмент</h2>
+                <a href="#">На все случаи</a>
               </div>
               <div class="promo-slider">
-                    <input type="radio" id="previous" name="switch">
-                    <input type="radio" id="next" name="switch">
-                    <label for="previous"></label>
-                    <label for="next"></label>
                  <div class="slide-1">
-                     <h2>Перфораторы</h2>
-                     <p>Настоящие мужские игрушки</p>
-                     <img src="img/slider1-group1.jpg" alt="Перфораторы" width="620" height="266">
-                     <a class="open-btn" href="catalog.html">Открыть каталог</a>
+                    <h2>Перфораторы</h2>
+                    <p>Настоящие мужские игрушки</p>
+                    <!--<img src="img/slider1-group1.jpg" alt="Перфораторы" width="620" height="266">-->
+                    <a class="open-btn" href="catalog.html">Открыть каталог</a>
                  </div>
                  <div class="slide-2">
-                     <h2>Дрели</h2>
-                     <p>Соседям на радость!</p>
-                     <img src="img/slider1-group2.jpg" alt="Дрели" width="620" height="266">
-                     <a class="open-btn">Открыть каталог</a>
+                    <h2>Дрели</h2>
+                    <p>Соседям на радость!</p>
+                    <img src="img/slider1-group2.jpg" alt="Дрели" width="620" height="266">
+                    <a class="open-btn">Открыть каталог</a>
                  </div>
+                 <input type="radio" id="previous" name="switch">
+                 <input type="radio" id="next" name="switch">
+                 <label for="previous"></label>
+                 <label for="next"></label>
               </div>
+            </div>
+
+            <div class="promo-right">
+              <div class="promo-item">
+                 <h2>Техника</h2>
+                <a href="#">Для стойки</a>
+              </div>
+              <div class="promo-item">
+                <h2>Скидка 50%</h2>
+                <a href="#">На 350 товаров</a>
+              </div>
+              <div class="promo-item">
+                <h2>Доставка</h2>
+                <a href="#">Бесплатно</a>
+              </div>
+             </div>
+
           </section>
 
           <section class="popular-goods container">
@@ -152,10 +160,10 @@
               </div>
           </section>
 
-          <section class="manufacturers container">
+          <section class="brand container">
               <div class="top">
                 <h2>Популярные производители:</h2>
-                <a class="popular-btn" href="#">Все популярные производители</a>
+                <a class="popular-btn" href="#">Все производители</a>
               </div>
               <ul>
                 <li>
