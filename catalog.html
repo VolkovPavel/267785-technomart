@@ -7,21 +7,23 @@
     </head>
     <body>
       <header class="header-main">
-        <div class="header-top container">
-          <a class="header-logo" href="index.html">Техномарт</a>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="header-search">Поиск:</label>
-            <input type="text" name="search" id="header-search">
-          </form>
-          <a class="bookmarks" href="#">Закладки:0</a>
-          <a class="shoping-cart" href="#">Корзина:10</a>
-          <a class="order-btn" href="#">Оформить заказ</a>
+        <div class="header-top-wrapper">
+          <div class="header-top container">
+            <a class="header-logo" href="index.html">Техномарт</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="header-search">Поиск:</label>
+              <input type="text" name="search" id="header-search">
+            </form>
+            <a class="bookmarks" href="#">Закладки:0</a>
+            <a class="shoping-cart" href="#">Корзина:10</a>
+            <a class="order-btn" href="#">Оформить заказ</a>
+          </div>
         </div>
         <div class="header-middle container">
           <div class="header-middle-about">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
-          <div class="header-middle-adress">
+          <div class="header-middle-contacts">
             <p>+7(812)555-05-55</p>
             <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
           </div>
@@ -61,7 +63,7 @@
         </div>
       </header>
 
-      <main>
+      <main class="container">
         <div class="breadcrumbs">
           <ul>
             <li>
@@ -79,8 +81,8 @@
           </ul>
         </div>
 
-        <h1 class="main-title">Перфораторы</h1>
-
+        <h1 class="catalog-main-title">Перфораторы</h1>
+        <div class="flex-container">
         <aside class="catalog-sidebar"><!--Левая колонка Фильтр-->
           <p>Фильтр:</p>
           <form action="#" method="get">
@@ -147,13 +149,17 @@
         </aside>
 
         <section class="catalog-main"><!--Правый блок Каталог-->
-          <div class="sort-by">
+          <div class="sort">
             <span>Сортировка:</span>
+            <div class="sort-by">
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По функционалу</a>
-            <a class="btn-up"></a>
-            <a class="btn-down"></a>
+            </div>
+            <div class="sort-btn">
+            <a class="btn-up">1</a>
+            <a class="btn-down">2</a>
+          </div>
           </div>
           <div class="catalog-items">
             <ul>
@@ -261,6 +267,7 @@
             <a class="catalog-next-btn">Следующая</a>
           </div>
         </section>
+        </div>
 
         <div class="drill-about container">
           <h2>Пара слов о перфораторах</h2>
@@ -316,17 +323,17 @@
 		 		<section class="footer-bottom container">
 			 		<p class="copyrights">Ⓒ 2010-2017 Компания «Техномарт»<br>
 						Все права защищены</p>
-			 		<ul class="social">
-				 		<li>
-					 		<a href="https://vk.com">VK</a>
-				 		</li>
-				 		<li>
-					 		<a href="https://ru-ru.facebook.com/">Facebook</a>
-				 		</li>
-				 		<li>
-					 		<a href="https://www.instagram.com/">Instagram</a>
-				 		</li>
-			 		</ul>
+			 		  <div class="social">
+              <div class="social-border">
+                <a href="https://vk.com">VK</a>
+              </div>
+              <div class="social-border">
+                <a href="https://ru-ru.facebook.com/">Facebook</a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/">Instagram</a>
+              </div>
+          </div>
 			 		<p class="feedback">Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
 			 		<p class="developer">Разработано-<a href="#">htmlacademy.ru</a></p>
 	 			</section>
