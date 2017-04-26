@@ -488,9 +488,7 @@ body{
 /*services*/
 
 .services{
-	padding: 0 450px;
-	height: 500px;
-	margin-bottom: 100px;
+	margin-bottom: 165px;
 	vertical-align: top;
 }
 .services .description h2{
@@ -585,7 +583,6 @@ body{
 /*about*/
 
 .about {
-	padding: 0 450px;
 	margin-bottom: 87px;
 }
 
