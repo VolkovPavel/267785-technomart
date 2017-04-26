@@ -314,7 +314,7 @@ body{
 	text-transform: uppercase;
 	padding: 24px 0 0 23px;
 	color: #fff;
-	
+
 }
 
 .slide-1 p,
@@ -490,6 +490,8 @@ body{
 .services{
 	margin-bottom: 165px;
 	vertical-align: top;
+  padding-top: 45px;
+
 }
 .services .description h2{
 	font-size: 30px;
@@ -497,7 +499,7 @@ body{
 	font-family: 'Cuprum' , 'Arial' ,'Tahoma' ,sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
-	padding-top: 70px;
+
 }
 
 .services .description p{
@@ -529,7 +531,7 @@ body{
 	list-style: none;
 	margin:0;
 	padding:0;
-} 
+}
 
 .services-slider{
 	margin:0;
@@ -743,8 +745,8 @@ body{
 	font-size: 14px;
 	line-height: 17px;
 	padding-top: 27px;
-	margin-left: 105px; 
-	
+	margin-left: 105px;
+
 }
 
 .footer-bottom .developer{
