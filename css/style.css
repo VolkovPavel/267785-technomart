@@ -294,6 +294,17 @@ body{
   margin-top: -10px;
 }
 
+.slide-2{
+	width: 620px;
+  height: 266px;
+	background: url("../img/slider1-group2.jpg") no-repeat;
+	margin-top: -10px;
+}
+
+.slide-1{
+	display: none;
+}
+
 .slide-1 h2,
 .slide-2 h2{
 	font-size: 36px;
@@ -328,10 +339,6 @@ body{
 	margin: 123px 0 0 25px;
 	padding: 10px 6px 9px 10px;
 	text-align: center;
-}
-
-.slide-2{
-  display: none;
 }
 
 .promo{
