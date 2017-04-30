@@ -35,7 +35,7 @@ body{
 
 .container{
   width: 940px;
-  margin:0px auto;
+  margin: 0px auto;
   padding: 0 10px;
 }
 
@@ -150,7 +150,7 @@ body{
 .header-middle-contacts,
 .header-middle-registration{
   font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
-	flex-basis: 300px;
+	width: 300px;
 }
 
 .header-middle-about{
@@ -346,6 +346,7 @@ body{
   flex-wrap: wrap;
 	justify-content: space-between;
 	margin-right: 20px;
+  flex-shrink: 1;
 }
 
 .promo-right{
