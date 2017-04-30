@@ -25,8 +25,8 @@
 								<p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 							</div>
 							<div class="header-middle-contacts">
-								<p>+7 (812) 555-05-55</p>
-								<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+								<p class="phone">+7 (812) 555-05-55</p>
+								<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 							</div>
 							<div class="header-middle-registration">
 								<a class="login-btn" href="#">Войти</a>
@@ -68,7 +68,7 @@
           <section class="promo container">
 
             <div class="promo-left">
-              <div class="promo-item">
+              <div class="promo-item new">
                 <h2>Материалы</h2>
                 <a href="#">На любой вкус</a>
               </div>
@@ -81,16 +81,21 @@
                     <h2>Перфораторы</h2>
                     <p>Настоящие мужские игрушки</p>
                     <a class="open-btn" href="catalog.html">Открыть каталог</a>
+									  <input type="radio" id="previous" name="switch">
+                 		<input type="radio" id="next" name="switch">
+                 		<label for="previous"></label>
+                 		<label for="next"></label>
                  </div>
                  <div class="slide-2">
                     <h2>Дрели</h2>
                     <p>Соседям на радость!</p>
                     <a class="open-btn">Открыть каталог</a>
+									  <input type="radio" id="previous" name="switch">
+                 		<input type="radio" id="next" name="switch">
+                 		<label for="previous"></label>
+                 		<label for="next"></label>
                  </div>
-                 <input type="radio" id="previous" name="switch">
-                 <input type="radio" id="next" name="switch">
-                 <label for="previous"></label>
-                 <label for="next"></label>
+
               </div>
             </div>
 
@@ -119,43 +124,43 @@
               <div class="catalog-items">
                   <ul>
                       <li>
+                         <div class="buy-bookmark">
+                            <a class="buy-btn" href="#">Купить</a>
+                            <a class="bookmark-btn" href="#">В закладки</a>
+                          </div>
                           <img src="img/drill1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="140">
                           <h2>Перфоратор BOSCH BFG 9000</h2>
                           <del class="old-price">32500 Р.</del>
                           <ins><a class="discount" href="#">25500 Р.</a></ins>
-                          <div class="buy-bookmark">
+                      </li>
+                      <li>
+                         <div class="buy-bookmark">
                             <a class="buy-btn" href="#">Купить</a>
                             <a class="bookmark-btn" href="#">В закладки</a>
                           </div>
-                      </li>
-                      <li>
                           <img src="img/drill2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="140">
                           <h2>Перфоратор BOSCH BFG 3000</h2>
                           <del class="old-price">22500 Р.</del>
                           <ins><a class="discount" href="#">15500 Р.</a></ins>
-                          <div class="buy-bookmark">
+                      </li>
+                      <li>
+                         <div class="buy-bookmark">
                             <a class="buy-btn" href="#">Купить</a>
                             <a class="bookmark-btn" href="#">В закладки</a>
                           </div>
-                      </li>
-                      <li>
                           <img src="img/drill3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="140">
                           <h2>Перфоратор BOSCH BFG 6000</h2>
                           <del class="old-price">30500 Р.</del>
                           <ins><a class="discount" href="#">25500 Р.</a></ins>
-                          <div class="buy-bookmark">
+                      </li>
+                      <li class="new">
+                         <div class="buy-bookmark">
                             <a class="buy-btn" href="#">Купить</a>
                             <a class="bookmark-btn" href="#">В закладки</a>
                           </div>
-                      </li>
-                      <li>
                           <img src="img/drill2.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="140">
                           <h2>Перфоратор BOSCH BFG 2000</h2>
                           <ins><a class="discount" href="#">12500 Р.</a></ins>
-                          <div class="buy-bookmark">
-                            <a class="buy-btn" href="#">Купить</a>
-                            <a class="bookmark-btn" href="#">В закладки</a>
-                          </div>
                       </li>
                   </ul>
               </div>
@@ -194,7 +199,8 @@
               </ul>
           </section>
 
-          <section class="services container">
+          <section class="services">
+						<div class="container">
               <div class="description">
                   <h2>Сервисы</h2>
                   <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.</p>
@@ -236,9 +242,10 @@
                       <h2>Кредит</h2>
                       <p>Залезть в долговую яму стало проще!<br>
                        Кредитные консультанты придут вам на помощь.</p>
-                      <a href="#">Отправить заявку</a>
+                      <a href="#" class="credit-btn">Отправить заявку</a>
                   </li>
               </ul>
+						</div>
           </section>
 
           <section class="about container">
@@ -263,7 +270,8 @@
        </main>
 
        <footer class="footer-main">
-         <section class="footer-top container">
+         <section class="footer-top ">
+					 <div class="container">
             <div class="footer-contacts">
               <a class="footer-logo">Техномарт</a>
               <p class="footer-adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
@@ -301,21 +309,16 @@
                  </li>
                </ul>
              </nav>
+						 </div>
          </section>
 
          <section class="footer-bottom container">
            <p class="copyrights">Ⓒ 2010-2017 Компания «Техномарт»<br>
             Все права защищены</p>
            <div class="social">
-            <div class="social-border">
               <a href="https://vk.com">VK</a>
-            </div>
-            <div class="social-border">
               <a href="https://ru-ru.facebook.com/">Facebook</a>
-            </div>
-            <div class="social-border">
               <a href="https://www.instagram.com/">Instagram</a>
-            </div>
            </div>
            <p class="feedback">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
            <p class="developer">Разработано-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
