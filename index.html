@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Техномарт</title>
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
     </head>
@@ -255,7 +255,7 @@
               <div class="description">
                 <h2>Компания «Техномарт»</h2>
                 <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-                <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со своими транспортными компаниями:</p>
+                <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со своими транспортными компаниями:</p>
                 <ul>
                     <li>Деловые линии</li>
                     <li>Автотрейдинг</li>
@@ -277,7 +277,7 @@
 					 <div class="container">
             <div class="footer-contacts">
               <a class="footer-logo">Техномарт</a>
-              <p class="footer-adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
+              <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
             </div>
              <nav class="footer-nav">
                <ul>
@@ -340,14 +340,20 @@
            </div>
            <div class="email-text-data">
             <label for="email-text">Текст письма:</label>
-            <textarea id="email-text" rows="10" cols="100" placeholder="В свободной форме"></textarea>
+            <textarea id="email-text" rows="10" cols="50" placeholder="В свободной форме"></textarea>
            </div>
-           <input type="submit" name="send" value="Отправить">
+           <div class="submit-wrapper">
+            <input type="submit" name="send" value="Отправить">
+            </div>
+					 <button class="red-cross">
+					 </button>
          </form>
        </div>
 
        <div class="map-popup-modal">
          <img class="map-layer1" src="img/map-popup.jpg" alt="Слой1" width="940" height="446">
+				  <div class="red-cross">
+					</div>
        </div>
   </body>
 </html>

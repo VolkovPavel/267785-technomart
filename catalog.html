@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Техномарт Каталог</title>
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
     </head>
@@ -24,17 +24,19 @@
         </div>
         <div class="header-middle container">
           <div class="header-middle-about">
-            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
           </div>
           <div class="header-middle-contacts">
-            <p>+7(812)555-05-55</p>
-            <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+            <p class="phone">+7 (812) 555-05-55</p>
+            <p class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
           </div>
           <div class="header-middle-logged"><!--Окно пользователя-->
             <a class="profile" href="#">Равшан Джамшутович</a>
-            <a class="sign-out-btn" href="#">Выход</a>
-            <a href="#">Мои заказы</a>
-            <a href="#">Личный кабинет</a>
+            <a class="sign-out-btn" href="#"><span>Выход</span></a>
+						<div class="orders-account">
+            	<a class="user-orders" href="#">Мои заказы</a>
+            	<a class="user-account" href="#">Личный кабинет</a>
+						</div>
           </div>
         </div>
         <div class="header-bottom container">
@@ -66,11 +68,12 @@
         </div>
       </header>
 
-      <main class="container">
-        <div class="breadcrumbs">
+      <main>
+        <div class="breadcrumbs container">
           <ul>
             <li>
-              <a class="home-btn" href="index.html"></a>
+              <a class="home-btn" href="index.html">
+							<p>На Главную</p></a>
             </li>
             <li>
               <a href="#">Каталог</a>
@@ -84,8 +87,8 @@
           </ul>
         </div>
 
-        <h1 class="catalog-main-title">Перфораторы</h1>
-        <div class="flex-container">
+        <h1 class="catalog-main-title container">Перфораторы</h1>
+        <div class="flex-container container">
         <aside class="catalog-sidebar"><!--Левая колонка Фильтр-->
           <p>Фильтр:</p>
           <form action="#" method="get">
@@ -160,11 +163,11 @@
             <a href="#">По функционалу</a>
             </div>
             <div class="sort-btn">
-            <a class="btn-up">1</a>
-            <a class="btn-down">2</a>
+            <a class="btn-up"></a>
+            <a class="btn-down"></a>
           </div>
           </div>
-          <div class="catalog-items">
+          <div class="catalog-items inner">
             <ul>
               <li>
                  <div class="buy-bookmark">
@@ -186,7 +189,7 @@
                 <del class="old-price">30500 Р.</del>
                 <ins><a class="discount" href="#">25500 Р.</a></ins>
               </li>
-              <li>
+              <li class="new">
                  <div class="buy-bookmark">
                   <a class="buy-btn" href="#">Купить</a>
                   <a class="bookmark-btn" href="#">В закладки</a>
@@ -205,7 +208,7 @@
                 <del class="old-price">22500 Р.</del>
                 <ins><a class="discount" href="#">15500 Р.</a></ins>
               </li>
-              <li>
+              <li class="new">
                  <div class="buy-bookmark">
                   <a class="buy-btn" href="#">Купить</a>
                   <a class="bookmark-btn" href="#">В закладки</a>
@@ -224,7 +227,7 @@
                 <h2>Перфоратор BOSCH BFG 2000</h2>
                 <ins><a class="discount" href="#">12500 Р.</a></ins>
               </li>
-               <li>
+               <li class="new">
                   <div class="buy-bookmark">
                   <a class="buy-btn" href="#">Купить</a>
                   <a class="bookmark-btn" href="#">В закладки</a>
@@ -257,8 +260,8 @@
           </div>
           <div class="catalog-navigation"><!--Переключатель каталога-->
             <ul>
-              <li>
-                <a href="#">1</a>
+              <li >
+                <a class="active" href="#">1</a>
               </li>
               <li>
                 <a href="#">2</a>
@@ -271,15 +274,15 @@
           </div>
         </section>
         </div>
-
-        <div class="drill-about container">
-          <h2>Пара слов о перфораторах</h2>
-          <p>
+        <div class="drill-about-wrapper">
+          <div class="drill-about container">
+            <h2>Пара слов о перфораторах</h2>
+            <p>
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-          </p>
+            </p>
+          </div>
         </div>
-
       </main>
 
       <footer class="footer-main">
