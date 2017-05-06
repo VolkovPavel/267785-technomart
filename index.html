@@ -12,10 +12,10 @@
         <header class="header-main">
           <div class="header-top-wrapper">
             <div class="header-top container">
-                <a class="header-logo">Техномарт</a>
+                <a class="header-logo current">Техномарт</a>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                  <label for="header-search">Поиск:</label>
-                  <input type="text" name="search" id="header-search">
+                  <input type="text" name="search" id="header-search" placeholder="Поиск:">
+									<label for="header-search">Поиск:</label>
                 </form>
                 <a class="bookmarks" href="#">Закладки: 0</a>
                 <a class="shoping-cart" href="#">Корзина: 0</a>
@@ -41,13 +41,13 @@
 						<nav>
 							<ul class="main-menu">
 								<li class="main-menu-item">
-									<a href="#">Главная</a>
+									<a class="current" href="#">Главная</a>
 								</li>
 								<li class="main-menu-item">
 									<a href="#">Компания</a>
 								</li>
 								<li class="main-menu-item">
-									<a href="#">Каталог</a>
+									<a href="/catalog.html">Каталог</a>
 								</li>
 								<li class="main-menu-item">
 									<a href="#">Новости</a>
@@ -84,21 +84,16 @@
                     <h2>Перфораторы</h2>
                     <p>Настоящие мужские игрушки</p>
                     <a class="open-btn" href="catalog.html">Открыть каталог</a>
-									  <input type="radio" id="previous" name="switch">
-                 		<input type="radio" id="next" name="switch">
-                 		<label for="previous"></label>
-                 		<label for="next"></label>
                  </div>
                  <div class="slide-2">
                     <h2>Дрели</h2>
                     <p>Соседям на радость!</p>
-                    <a class="open-btn">Открыть каталог</a>
-									  <input type="radio" id="previous" name="switch">
-                 		<input type="radio" id="next" name="switch">
-                 		<label for="previous"></label>
-                 		<label for="next"></label>
-                 </div>
-
+                    <a class="open-btn" href="catalog.html">Открыть каталог</a>
+                </div>
+                  <input type="radio" id="previous" name="switch" checked>
+                  <label class="previous" for="previous"></label>
+                  <input type="radio" id="next" name="switch">
+                  <label class="next" for="next"></label>
               </div>
             </div>
 
@@ -288,7 +283,7 @@
                    <a href="#">Новости</a>
                  </li>
                  <li>
-                   <a href="#">Каталог</a>
+                   <a href="/catalog.html">Каталог</a>
                  </li>
                  <li>
                    <a href="#">Доставка</a>

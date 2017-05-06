@@ -14,11 +14,11 @@
           <div class="header-top container">
             <a class="header-logo" href="index.html">Техномарт</a>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="header-search">Поиск:</label>
-              <input type="text" name="search" id="header-search">
+              <input type="text" name="search" id="header-search" placeholder="Поиск:">
+						  <label for="header-search">Поиск:</label>
             </form>
             <a class="bookmarks" href="#">Закладки: 0</a>
-            <a class="shoping-cart" href="#">Корзина: 10</a>
+            <a class="shoping-cart not-empty" href="#">Корзина: 10</a>
             <a class="order-btn" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -43,13 +43,13 @@
           <nav>
             <ul class="main-menu">
               <li class="main-menu-item">
-                <a href="#">Главная</a>
+                <a href="/index.html">Главная</a>
               </li>
               <li class="main-menu-item">
                 <a href="#">Компания</a>
               </li>
               <li class="main-menu-item">
-                <a href="#">Каталог</a>
+                <a href="#" class="current">Каталог</a>
               </li>
               <li class="main-menu-item">
                 <a href="#">Новости</a>
@@ -114,7 +114,7 @@
               <legend>Производители:</legend>
                 <ul>
                   <li>
-                    <input type="checkbox" name="manufacturer" id="bosch">
+                    <input type="checkbox" name="manufacturer" id="bosch" checked>
                     <label for="bosch">bosch</label>
                   </li>
                   <li>
@@ -122,7 +122,7 @@
                     <label for="interskol">интерскол</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="manufacturer" id="makita">
+                    <input type="checkbox" name="manufacturer" id="makita" checked>
                     <label for="makita">makita</label>
                   </li>
                   <li>
@@ -140,7 +140,7 @@
               <legend>Питание:</legend>
                 <ul>
                   <li>
-                    <input type="radio" name="power-type" id="battery">
+                    <input type="radio" name="power-type" id="battery" checked>
                     <label for="battery">Аккумуляторные</label>
                   </li>
                   <li>
@@ -158,12 +158,12 @@
           <div class="sort">
             <span>Сортировка:</span>
             <div class="sort-by">
-            <a href="#">По цене</a>
+            <a href="#" class="active">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По функционалу</a>
             </div>
             <div class="sort-btn">
-            <a class="btn-up"></a>
+            <a class="btn-up active-btn"></a>
             <a class="btn-down"></a>
           </div>
           </div>
@@ -343,8 +343,12 @@
 
       <div class="cart-modal"><!--Модальное окно корзины-->
         <p>Товар добавлен в корзину!</p>
-      	<a class="cart-order-btn" href="#">Оформить заказ</a>
-        <a class="cart-continue-btn" href="#">Продолжить покупки</a>
+				<div class="modal-bnt-wrapper">
+      		<a class="cart-order-btn" href="#">Оформить заказ</a>
+        	<a class="cart-continue-btn" href="#">Продолжить покупки</a>
+				</div>
+				<button class="red-cross">
+				</button>
       </div>
 
     </body>
