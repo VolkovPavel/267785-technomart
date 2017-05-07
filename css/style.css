@@ -212,7 +212,7 @@ body{
 }
 
 .header-middle-contacts{
-  padding: 26px 0 0 18px;
+  padding: 46px 0 0 18px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -227,6 +227,7 @@ body{
   color: #e9292a;
 	border: 2px solid #fff;
   box-sizing: border-box;
+  text-decoration: none;
 	position: relative;
 }
 
@@ -236,7 +237,7 @@ body{
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
-  margin-top: -15px;
+  margin-top: 7px;
   box-sizing: border-box;
 }
 
@@ -555,6 +556,10 @@ body{
 
 .promo-slider input{
   display: none;
+}
+
+.promo-slider label{
+  cursor: pointer;
 }
 
 .promo-slider label::before{
@@ -890,8 +895,6 @@ body{
  display: block;
 }
 
-
-
 .old-price{
   font-size: 17px;
   line-height: 18px;
@@ -1046,6 +1049,12 @@ ins{
 }
 
 .services-slider-controls label:active{
+  color: #32425c;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.services-slider-controls .active{
   color: #32425c;
   background-color: #fff;
   box-shadow: none;
@@ -1449,6 +1458,10 @@ ins{
 
 /*modal*/
 
+.write-us-modal{
+  display: none;
+}
+
 .write-us-modal form{
   margin: auto;
   border-top: 8px solid #ff5357;
@@ -1577,6 +1590,7 @@ ins{
 	margin: 0 auto;
 	box-shadow: 0 0 30px 0 #17202a;
 	position: relative;
+  display: none;
 }
 
 
@@ -1717,7 +1731,7 @@ ins{
 	width: 15px;
   height: 12px;
   background-position: -164px -5px;
-	top: 2px;
+	top: -10px;
 	left: -15px;
 }
 
@@ -1745,6 +1759,7 @@ ins{
 }
 
 .breadcrumbs ul li a{
+  display: inline-block;
 	text-decoration: none;
 	color: #000;
 }
@@ -1844,8 +1859,14 @@ ins{
 	top: -9px;
 	right: 17px;
 }
-
+.filter-interval{
+  width: 220px;
+  box-sizing: border-box;
+  font-size:0;
+}
 .filter-interval input[type="text"]{
+  margin: 0;
+  padding: 0;
 	width: 95px;
 	height: 35px;
 	border: none;
@@ -1857,7 +1878,7 @@ ins{
 }
 
 .filter-interval label:first-child input{
-	margin-right: 25px;
+  margin-right: 30px;
 }
 
 .manufacturers-form{
@@ -2189,6 +2210,7 @@ input[type="radio"]:disabled+label::after{
 	font-family: 'Cuprum', 'Arial' ,'Tahoma' ,sans-serif;
 	box-shadow: 0 15px 50px 0 #7d8490;
 	position: relative;
+  display: none;
 }
 
 .cart-modal p{
