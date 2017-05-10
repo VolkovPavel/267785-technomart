@@ -80,20 +80,29 @@
                 <a href="#">На все случаи</a>
               </div>
               <div class="promo-slider">
+
+                  <button class="arrow-left"></button>
+                  <button class="arrow-right"></button>
+
+                  <input type="radio" id="previous" name="switch" checked>
+                  <input type="radio" id="next" name="switch">
+
                  <div class="slide-1">
                     <h2>Перфораторы</h2>
                     <p>Настоящие мужские игрушки</p>
                     <a class="open-btn" href="catalog.html">Открыть каталог</a>
                  </div>
+
                  <div class="slide-2">
                     <h2>Дрели</h2>
                     <p>Соседям на радость!</p>
                     <a class="open-btn" href="catalog.html">Открыть каталог</a>
                 </div>
-                  <input type="radio" id="previous" name="switch" checked>
-                  <label class="previous" for="previous"></label>
-                  <input type="radio" id="next" name="switch">
-                  <label class="next" for="next"></label>
+
+                  <div class="promo-slider-controls">
+                    <label class="previous" for="previous"></label>
+                    <label class="next" for="next"></label>
+                  </div>
               </div>
             </div>
 
@@ -205,21 +214,18 @@
               </div>
 
               <div class="services-slider-controls">
-								<ul>
-									<li>
-                  	<input type="radio" id="delivery" name="delivery">
-										<label class="active" for="delivery">Доставка</label>
-									</li>
-									<li>
-										<input type="radio" id="guarantee" name="guaratee">
-										<label for="guarantee">Гарантия</label>
-									</li>
-									<li>
-                  	<input type="radio" id="credit" name="credit">
-                  	<label for="credit">Кредит</label>
-									</li>
-								</ul>
+
+                  <input type="radio" id="delivery" name="switch">
+                  <input type="radio" id="guarantee" name="switch">
+                  <input type="radio" id="credit" name="switch">
+
+                <div class="label-controls">
+                  <label class="active" for="delivery">Доставка</label>
+                  <label for="guarantee">Гарантия</label>
+                  <label for="credit">Кредит</label>
+                </div>
               </div>
+
               <ul class="services-slider">
                   <li class="delivery-slide">
                       <h2>Доставка</h2>
@@ -244,6 +250,7 @@
                   </li>
               </ul>
 						</div>
+
           </section>
 
           <section class="about container">
@@ -261,7 +268,7 @@
               <div class="contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами<br>заехав в наш офис:</p>
-                <img src="img/map.jpg" alt="Карта" width="300" height="158">
+                <a href="#" class="map-open"><img src="img/map.jpg" alt="Карта" width="300" height="158"></a>
                 <a class="contacts-btn" href="#">Заблудились? Напишите нам!</a>
               </div>
           </section>
@@ -340,15 +347,60 @@
            <div class="submit-wrapper">
             <input type="submit" name="send" value="Отправить">
             </div>
-					 <button class="red-cross">
+					 <button class="form-close red-cross">
 					 </button>
          </form>
+				 <div class="overlay"></div>
        </div>
 
-       <div class="map-popup-modal">
+       <!--<div class="map-popup-modal">
          <img class="map-layer1" src="img/map-popup.jpg" alt="Слой1" width="940" height="446">
-				  <div class="red-cross">
+				  <div class="map-close red-cross">
 					</div>
-       </div>
+       </div>-->
+
+       	<div class="map-popup-modal">
+         	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.216740860849!2d30.321846764580936!3d59.938940573583565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494263616207" width="940" height="446" style="border:0" allowfullscreen></iframe>
+					<button class="map-close red-cross google">
+					</button>
+       	</div>
+
+			<script type="text/javascript">
+				var formOpen = document.querySelector(".contacts-btn");
+				var formPopup = document.querySelector(".write-us-modal");
+				var formClose =  document.querySelector(".form-close");
+
+				formOpen.addEventListener("click", function(event){
+					event.preventDefault();
+					formPopup.classList.add("write-us-modal-show");
+          console.log("Форму открыть");
+				});
+
+				formClose.addEventListener("click", function(event){
+					event.preventDefault();
+					formPopup.classList.remove("write-us-modal-show");
+          console.log("Форму закрыть");
+				});
+			</script>
+
+
+      <script type="text/javascript">
+        var mapOpen = document.querySelector(".map-open");
+        var mapPopup = document.querySelector(".map-popup-modal");
+        var mapClose = document.querySelector(".map-close");
+
+
+        mapOpen.addEventListener("click", function (event){
+          event.preventDefault();
+          mapPopup.classList.add("map-modal-show");
+          console.log("Карту открыть");
+        });
+
+        mapClose.addEventListener("click", function(event){
+					event.preventDefault();
+					mapPopup.classList.remove("map-modal-show");
+          console.log("Карту закрыть");
+				});
+      </script>
   </body>
 </html>

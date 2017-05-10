@@ -349,9 +349,24 @@
       		<a class="cart-order-btn" href="#">Оформить заказ</a>
         	<a class="cart-continue-btn" href="#">Продолжить покупки</a>
 				</div>
-				<button class="red-cross">
+				<button class="cart-close red-cross">
 				</button>
       </div>
+
+      <script type="text/javascript">
+        var cartBuy = document.querySelectorAll(".bookmark-btn");
+        var cart = document.querySelector(".cart-modal");
+        var cartClose = document.querySelector(".cart-close");
+
+        cartBuy.eventTarget.addEventListener("click", function(event){event.preventDefault();
+          cart.classList.add("cart-modal-show");
+          console.log("Открыть окно");
+          });
+
+        cartClose.addEventListener("click", function(event){event.preventDefault();
+          cart.classList.remove("cart-modal-show");
+        });
+      </script>
 
     </body>
   </html>
