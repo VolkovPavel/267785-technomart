@@ -1835,9 +1835,10 @@ transform: translate(-50%, -45%);
 transform: translate(-50%, -55%);
 }
 100% {
--webkit-transform: translateY(-50%, -50%);
-transform: translateY(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
+  }
 
 @-webkit-keyframes shake {
   0%, 100% {
