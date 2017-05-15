@@ -427,6 +427,7 @@ body{
 }
 
 .promo-left{
+  width: 620px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 	-webkit-box-pack: justify;
